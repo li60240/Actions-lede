@@ -31,10 +31,10 @@ git clone --depth=1 https://github.com/Siriling/5G-Modem-Support Modem-Support
 # 5G通信模组拨号工具
 mkdir package/community
 mkdir package/community/quectel_QMI_WWAN
-mkdir package/community/meig_QMI_WWAN
+# mkdir package/community/meig_QMI_WWAN
 mkdir package/community/fibocom_QMI_WWAN
 mkdir package/community/quectel_cm_5G
-mkdir package/community/meig_cm
+# mkdir package/community/meig_cm
 mkdir package/community/quectel_MHI
 mkdir package/community/luci-app-hypermodem        
 mkdir package/community/sms-tool
@@ -47,9 +47,9 @@ cp -rf ./Modem-Support/quectel_MHI/* package/community/quectel_MHI
 cp -rf ./Modem-Support/luci-app-hypermodem/* package/community/luci-app-hypermodem
 cp -rf ./Modem-Support/sms-tool/* package/community/sms-tool
 cp -rf ./Modem-Support/luci-app-sms-tool/* package/community/luci-app-sms-tool
-cp -rf ./Modem-Support/meig_QMI_WWAN/* package/community/meig_QMI_WWAN
+# cp -rf ./Modem-Support/meig_QMI_WWAN/* package/community/meig_QMI_WWAN
 cp -rf ./Modem-Support/fibocom_QMI_WWAN/* package/community/fibocom_QMI_WWAN
-cp -rf ./Modem-Support/meig_cm/* package/community/meig_cm
+# cp -rf ./Modem-Support/meig_cm/* package/community/meig_cm
 cp -rf ./Modem-Support/luci-app-modem/* package/community/luci-app-modem
 
 #5G相关
@@ -74,11 +74,11 @@ CONFIG_PACKAGE_luci-app-hypermodem=y
 # QMI拨号工具（移远，广和通）
 CONFIG_PACKAGE_quectel-CM-5G=y
 # CONFIG_PACKAGE_fibocom-dial=y
-CONFIG_PACKAGE_meig_cm=y
+# CONFIG_PACKAGE_meig_cm=y
         
 # QMI驱动
 CONFIG_PACKAGE_kmod-qmi_wwan_f=y
-CONFIG_PACKAGE_kmod-qmi_wwan_m=y
+# CONFIG_PACKAGE_kmod-qmi_wwan_m=y
 CONFIG_PACKAGE_kmod-qmi_wwan_q=y
 CONFIG_PACKAGE_kmod-pcie_mhi=y
         
